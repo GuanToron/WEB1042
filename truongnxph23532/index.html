@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGUYEN XUAN TRUONG</title>
+</head>
+
+<body>
+    <form onsubmit="return check()">
+        <table>
+            <tr>
+                <td>Khach hang</td>
+                <td><input type="text"></td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td>Loai hang</td>
+                <td>
+                    <select id="type" onchange="change()">
+                        <option value="-1">Chon loai hang</option>
+                        <option>Loai 1</option>
+                        <option>Loai 2</option>
+                        <option>Loai 3</option>
+                    </select>
+                </td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td>Don gia</td>
+                <td><input type="text" readonly></td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td>So luong</td>
+                <td><input type="number" onchange="tien()" min="0"></td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td>Thanh tien</td>
+                <td><input type="text" readonly></td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td>Noi nhan hang</td>
+                <td>
+                    <input type="radio" name="ship">Noi thanh
+                    <input type="radio" name="ship">Ngoai thanh
+                </td>
+                <td><span></span></td>
+            </tr>
+            <tr>
+                <td>Phi van chuyen</td>
+                <td><input type="text"></td>
+                <td><span></span></td>
+            </tr>
+        </table>
+        <button type="submit">DAT MUA</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
